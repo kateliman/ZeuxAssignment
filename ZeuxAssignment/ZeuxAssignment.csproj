@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ZeuxClient\app\app.component.ts" />
+    <None Remove="ZeuxClient\app\app.module.ts" />
+    <None Remove="ZeuxClient\app\product.ts" />
+    <None Remove="ZeuxClient\app\products.service.ts" />
+    <None Remove="ZeuxClient\main.ts" />
+    <None Remove="ZeuxClient\polyfills.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ZeuxClient\app\app.component.ts" />
+    <TypeScriptCompile Include="ZeuxClient\app\app.module.ts" />
+    <TypeScriptCompile Include="ZeuxClient\app\product.ts" />
+    <TypeScriptCompile Include="ZeuxClient\app\products.service.ts" />
+    <TypeScriptCompile Include="ZeuxClient\main.ts" />
+    <TypeScriptCompile Include="ZeuxClient\polyfills.ts" />
+  </ItemGroup>
+
+</Project>

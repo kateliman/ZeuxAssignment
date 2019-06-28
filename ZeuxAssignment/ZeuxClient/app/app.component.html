@@ -1,0 +1,15 @@
+﻿
+<div id="productList">
+    <ul class="list-group list-group-flush">
+        <li *ngFor="let item of products" class="list-group-item">
+            <div class="productInfo">
+                <p class="productInfoRow secondary">{{item.productType}}</p>
+                <p class="productInfoRow primary">{{item.name}}</p>
+                <p class="productInfoRow secondary">{{item.returns}}&#37; Yearly</p>
+            </div>
+            <div class="productPrice">
+                <p class="productPriceRow primary">&pound;{{item.price}}</p>
+            </div>
+        </li>
+    </ul>
+</div>
