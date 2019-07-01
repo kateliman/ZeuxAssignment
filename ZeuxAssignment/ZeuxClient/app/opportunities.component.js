@@ -23,7 +23,6 @@ let OpportunitiesComponent = class OpportunitiesComponent {
 };
 OpportunitiesComponent = __decorate([
     core_1.Component({
-        selector: 'opp',
         template: '<p> {{result}} </p>'
     }),
     __metadata("design:paramtypes", [router_1.ActivatedRoute])

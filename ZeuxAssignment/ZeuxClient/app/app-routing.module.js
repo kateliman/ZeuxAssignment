@@ -8,20 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
 const router_1 = require("@angular/router");
-const common_1 = require("@angular/common");
 const assets_component_1 = require("./assets.component");
-let AssetsModule = class AssetsModule {
+const opportunities_component_1 = require("./opportunities.component");
+const routes = [
+    { path: 'assets', component: assets_component_1.AssetsComponent },
+    { path: 'opportunities', component: opportunities_component_1.OpportunitiesComponent },
+];
+let AppRoutingModule = class AppRoutingModule {
 };
-AssetsModule = __decorate([
+AppRoutingModule = __decorate([
     core_1.NgModule({
-        imports: [common_1.CommonModule],
-        exports: [
-            router_1.RouterModule
-        ],
-        declarations: [
-            assets_component_1.AssetsComponent
-        ]
+        imports: [router_1.RouterModule.forRoot(routes)],
+        exports: [router_1.RouterModule]
     })
-], AssetsModule);
-exports.AssetsModule = AssetsModule;
-//# sourceMappingURL=assets.module.js.map
+], AppRoutingModule);
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=app-routing.module.js.map

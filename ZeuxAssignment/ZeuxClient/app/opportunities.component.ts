@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import { RouterModule, Routes } from '@angular/router';
 
 @Component({
-    selector: 'span',
     template: '<p> {{result}} </p>'
 })
 export class OpportunitiesComponent implements OnInit {

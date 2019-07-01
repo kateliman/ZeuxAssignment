@@ -30,7 +30,6 @@ let AssetsComponent = class AssetsComponent {
 };
 AssetsComponent = __decorate([
     core_1.Component({
-        selector: 'content',
         templateUrl: './assets.component.html',
         providers: [products_service_1.ProductsService]
     }),

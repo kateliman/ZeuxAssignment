@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 //import { Product } from './product';
 
 @Component({
-    selector: 'router-outlet',
+    selector: 'app',
     templateUrl: './app.component.html',
     //providers: [ProductsService]
 })
