@@ -4,17 +4,20 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
   <ItemGroup>
     <None Remove="ZeuxClient\app\app.component.ts" />
     <None Remove="ZeuxClient\app\app.module.ts" />
+    <None Remove="ZeuxClient\app\assets.component.ts" />
+    <None Remove="ZeuxClient\app\assets.module.ts" />
+    <None Remove="ZeuxClient\app\opportunities.component.ts" />
+    <None Remove="ZeuxClient\app\opportunities.module.ts" />
     <None Remove="ZeuxClient\app\product.ts" />
     <None Remove="ZeuxClient\app\products.service.ts" />
     <None Remove="ZeuxClient\main.ts" />
     <None Remove="ZeuxClient\polyfills.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\styles.css" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +29,10 @@
   <ItemGroup>
     <TypeScriptCompile Include="ZeuxClient\app\app.component.ts" />
     <TypeScriptCompile Include="ZeuxClient\app\app.module.ts" />
+    <TypeScriptCompile Include="ZeuxClient\app\assets.component.ts" />
+    <TypeScriptCompile Include="ZeuxClient\app\assets.module.ts" />
+    <TypeScriptCompile Include="ZeuxClient\app\opportunities.component.ts" />
+    <TypeScriptCompile Include="ZeuxClient\app\opportunities.module.ts" />
     <TypeScriptCompile Include="ZeuxClient\app\product.ts" />
     <TypeScriptCompile Include="ZeuxClient\app\products.service.ts" />
     <TypeScriptCompile Include="ZeuxClient\main.ts" />

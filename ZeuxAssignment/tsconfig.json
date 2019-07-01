@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "es2015",
-    "moduleResolution": "node",
+    "baseUrl": "./",
+    "module": "commonjs",
     "sourceMap": true,
+    "declaration": false,
+    "target": "es2015",
+    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": [ "es2015", "dom" ],
-    "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,
+    "lib": [ "es2018", "dom" ],
+
     "typeRoots": [
       "node_modules/@types/",
       "webpack-env"

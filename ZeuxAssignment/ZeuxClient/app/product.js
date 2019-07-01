@@ -1,11 +1,12 @@
-var Product = /** @class */ (function () {
-    function Product(Name, ProductType, Price, Returns) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Product {
+    constructor(Name, ProductType, Price, Returns) {
         this.Name = Name;
         this.ProductType = ProductType;
         this.Price = Price;
         this.Returns = Returns;
     }
-    return Product;
-}());
-export { Product };
+}
+exports.Product = Product;
 //# sourceMappingURL=product.js.map

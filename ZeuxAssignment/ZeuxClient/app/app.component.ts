@@ -1,24 +1,29 @@
 ﻿import { Component, OnInit } from '@angular/core';
-import { ProductsService } from './products.service';
-import { Product } from './product';
+import { RouterOutlet } from '@angular/router';
+//import { ProductsService } from './products.service';
+//import { Product } from './product';
 
 @Component({
-    selector: 'app',
+    selector: 'router-outlet',
     templateUrl: './app.component.html',
-    providers: [ProductsService]
+    //providers: [ProductsService]
 })
-export class AppComponent implements OnInit {
+export class AppComponent /*implements OnInit */{
+    public outlet: RouterOutlet;
+    //get(outlet: RouterOutlet) {
+    //    return outlet && outlet.activatedRouteData;
+    //}
+    //public products: Product[];
+    //viewMode = 'All';
 
-    public products: Product[];
+    //constructor(private productsService: ProductsService) { }
 
-    constructor(private productsService: ProductsService) { }
-
-    ngOnInit() {
-        this.getProducts();
-    }
+    //ngOnInit() {
+    //    this.getProducts();
+    //}
     
-    getProducts() {
-        this.productsService.getAllProducts()
-            .subscribe((data: Product[]) => this.products = data);
-    }
+    //getProducts() {
+    //    this.productsService.getAllProducts()
+    //        .subscribe((data: Product[]) => this.products = data);
+    //}
 }

@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "ffeef0b4e0cd6efb062c";
+/******/ 	var hotCurrentHash = "127747dd96af0ff24f2f";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -800,11 +800,11 @@
 /*!*********************************!*\
   !*** ./ZeuxClient/polyfills.ts ***!
   \*********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var core_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js */ \"./node_modules/core-js/index.js\");\n/* harmony import */ var core_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var zone_js_dist_zone__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! zone.js/dist/zone */ \"./node_modules/zone.js/dist/zone.js\");\n/* harmony import */ var zone_js_dist_zone__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(zone_js_dist_zone__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\n\n//# sourceURL=webpack:///./ZeuxClient/polyfills.ts?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__webpack_require__(/*! core-js */ \"./node_modules/core-js/index.js\");\r\n__webpack_require__(/*! zone.js/dist/zone */ \"./node_modules/zone.js/dist/zone.js\");\r\n\n\n//# sourceURL=webpack:///./ZeuxClient/polyfills.ts?");
 
 /***/ }),
 

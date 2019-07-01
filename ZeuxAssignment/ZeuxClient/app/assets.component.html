@@ -1,0 +1,41 @@
+﻿<div class="assets-tab-bar">
+    <ul class="tabs">
+        <li class="tab assets" [class.active]="viewMode == 'All'" rel="All" (click)="viewMode ='All'">All</li>
+        <li class="tab assets" [class.active]="viewMode == 'Savings'" rel="Savings" (click)="viewMode ='Savings'">Savings</li>
+        <li class="tab assets" [class.active]="viewMode == 'P2P'" rel="P2P" (click)="viewMode ='P2P'">P2P</li>
+        <li class="tab assets" [class.active]="viewMode == 'Funds'" rel="Funds" (click)="viewMode ='Funds'">Funds</li>
+    </ul>
+</div>
+<div class="productList" [ngSwitch]="viewMode">
+    <div id="All" *ngSwitchCase="'All'">
+        <ul>
+            <li *ngFor="let item of products">
+                <div class="product">
+                    <div class="productInfo">
+                        <p class="secondary">{{item.productType}}</p>
+                        <p class="primary">{{item.name}}</p>
+                        <p class="secondary">{{item.returns}}&#37; Yearly</p>
+                    </div>
+                    <div class="productPrice">
+                        <p class="primary">&pound;{{item.price}}</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="Savings" *ngSwitchCase="'Savings'">
+        <p>
+            No savings
+        </p>
+    </div>
+    <div id="P2P" *ngSwitchCase="'P2P'">
+        <p>
+            No P2P
+        </p>
+    </div>
+    <div id="Funds" *ngSwitchCase="'Funds'">
+        <p>
+            No funds
+        </p>
+    </div>
+</div>

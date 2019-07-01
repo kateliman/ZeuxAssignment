@@ -1,15 +1,21 @@
 ﻿
-<div id="productList">
-    <ul class="list-group list-group-flush">
-        <li *ngFor="let item of products" class="list-group-item">
-            <div class="productInfo">
-                <p class="productInfoRow secondary">{{item.productType}}</p>
-                <p class="productInfoRow primary">{{item.name}}</p>
-                <p class="productInfoRow secondary">{{item.returns}}&#37; Yearly</p>
-            </div>
-            <div class="productPrice">
-                <p class="productPriceRow primary">&pound;{{item.price}}</p>
-            </div>
-        </li>
-    </ul>
+<div class="main-tab-bar">
+    <nav>
+        <a routerLink="/assets">My assets</a>
+        <a routerLink="/opportunities">Opportunities</a>
+    </nav>
+        <router-outlet></router-outlet>
+    
+    <!--<ul class="tabs">
+            <li class="tab main" [class.active]="viewMode == 'MyAssets'" rel="MyAssets" (click)="viewMode ='MyAssets'">My Assets</li>
+            <li class="tab main" [class.active]="viewMode == 'Opportunities'" rel="Opportunities" (click)="viewMode ='Opportunities'">Opportunities</li>
+        </ul>
+    </div>
+    <div id="MyAssets" *ngSwitchCase="'MyAssets'">
+        <assets></assets>
+    </div>
+    <div id="Opportunities" *ngSwitchCase="'Opportunities'" [routerLink]="['/opportunities']">
+        <p>
+            result
+        </p>-->
 </div>
