@@ -1,0 +1,11 @@
+﻿<div class="assets-tab-bar">
+    <nav class="tabs">
+        <a routerLink="/assets/all" class="tab assets" [class.active]="viewMode == 'All'" (click)="viewMode ='All'">All</a>
+        <a routerLink="/assets/savings" class="tab assets" [class.active]="viewMode == 'Savings'"(click)="viewMode ='Savings'">Savings</a>
+        <a routerLink="/assets/p2p" class="tab assets" [class.active]="viewMode == 'P2P'" (click)="viewMode ='P2P'">P2P</a>
+        <a routerLink="/assets/funds" class="tab assets" [class.active]="viewMode == 'Funds'" (click)="viewMode ='Funds'">Funds</a>
+    </nav>
+</div>
+<div class="productList" [ngSwitch]="viewMode">
+    <router-outlet></router-outlet>
+</div>
