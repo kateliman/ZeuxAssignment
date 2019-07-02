@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ZeuxAssignment.Models;
 
@@ -8,7 +9,7 @@ namespace ZeuxAssignment.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet, Authorize]
         public ActionResult<IEnumerable<Product>> Get()
         {
             var product = new Product

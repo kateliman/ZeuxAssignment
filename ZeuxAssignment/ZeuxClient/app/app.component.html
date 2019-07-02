@@ -1,8 +1,8 @@
 ﻿
 <div class="main-tab-bar">
     <nav class="tabs">
-        <a class="tab main" [class.active]="ActiveTab == 'MyAssets'" (click)="ActiveTab ='MyAssets'" routerLink="/assets">My assets</a>
-        <a class="tab main" [class.active]="ActiveTab == 'Opportunities'" (click)="ActiveTab ='Opportunities'" routerLink="/opportunities">Opportunities</a>
+        <a class="tab main" [ngClass]="{'active':ActiveTab === 'MyAssets'}" (click)="ActiveTab ='MyAssets'" routerLink="/assets">My assets</a>
+        <a class="tab main" [ngClass]="{'active':ActiveTab === 'Opportunities'}" (click)="ActiveTab ='Opportunities'" routerLink="/opportunities">Opportunities</a>
     </nav>
 </div>
 <div class="content">
