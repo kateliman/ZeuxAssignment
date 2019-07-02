@@ -8,6 +8,9 @@ ul {
     list-style-type: none;
     padding-left: 0px;
 }
+a{
+    text-decoration: none;
+}
 
 .secondary {
     color: GrayText
@@ -30,18 +33,24 @@ ul {
 
 .assets-tab-bar {
     border-bottom: gray solid 1px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    left: 0px;
 }
 
 .main-tab-bar {
     display: flex;
     background-color: black;
     justify-content: center;
+    top: 125px;
+    left: 0;
+    width: 100%;
 }
 
 .tab {
     background: none;
     font-size: 40px;
-    
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -52,22 +61,46 @@ ul {
 .assets {
     color: gray;
     text-transform: uppercase;
-    padding: 40px 0px 40px 60px;
+    padding: 20px 0px 20px 60px;
 }
 
 .main {
     color: gray;
-    padding: 10px 50px 0px 50px;
+    padding: 10px 50px 17px 50px;
 }
 .main.active {
     color: white;
-    border-bottom: green solid 3px;
+    border-bottom: green solid 5px;
 }
 
 .productList {
-    margin: 10px 50px 50px 50px;
+    padding-top: 130px;
 }
 
 .tabs {
     display: flex;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    border-bottom: black solid 2px;
+    top: 0;
+    left: 0;
+    width: 92%;
+}
+
+.header, .main-tab-bar, assets-tab-bar {
+    position: fixed;
+}
+
+.content {
+    margin-top: 165px;
+    padding: 40px;
 }

@@ -1,20 +1,10 @@
 ﻿
 <div class="main-tab-bar">
-    <nav>
-        <a routerLink="/assets">My assets</a>
-        <a routerLink="/opportunities">Opportunities</a>
+    <nav class="tabs">
+        <a class="tab main" [class.active]="ActiveTab == 'MyAssets'" (click)="ActiveTab ='MyAssets'" routerLink="/assets">My assets</a>
+        <a class="tab main" [class.active]="ActiveTab == 'Opportunities'" (click)="ActiveTab ='Opportunities'" routerLink="/opportunities">Opportunities</a>
     </nav>
+</div>
+<div class="content">
     <router-outlet></router-outlet>
-    <!--<ul class="tabs">
-            <li class="tab main" [class.active]="viewMode == 'MyAssets'" rel="MyAssets" (click)="viewMode ='MyAssets'">My Assets</li>
-            <li class="tab main" [class.active]="viewMode == 'Opportunities'" rel="Opportunities" (click)="viewMode ='Opportunities'">Opportunities</li>
-        </ul>
-    </div>
-    <div id="MyAssets" *ngSwitchCase="'MyAssets'">
-        <assets></assets>
-    </div>
-    <div id="Opportunities" *ngSwitchCase="'Opportunities'" [routerLink]="['/opportunities']">
-        <p>
-            result
-        </p>-->
 </div>
