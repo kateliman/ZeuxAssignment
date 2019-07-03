@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-	<MSBuildVersion>16</MSBuildVersion>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <TypeScriptToolsVersion>3.5</TypeScriptToolsVersion>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="ZeuxClient\app\app.component.ts" />
     <None Remove="ZeuxClient\app\app.module.ts" />
+    <None Remove="ZeuxClient\app\assets-routing.module.ts" />
     <None Remove="ZeuxClient\app\assets.component.ts" />
     <None Remove="ZeuxClient\app\assets.module.ts" />
     <None Remove="ZeuxClient\app\opportunities.component.ts" />
@@ -31,6 +31,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="ZeuxClient\app\app.component.ts" />
     <TypeScriptCompile Include="ZeuxClient\app\app.module.ts" />
+    <TypeScriptCompile Include="ZeuxClient\app\assets-routing.module.ts" />
     <TypeScriptCompile Include="ZeuxClient\app\assets.component.ts" />
     <TypeScriptCompile Include="ZeuxClient\app\assets.module.ts" />
     <TypeScriptCompile Include="ZeuxClient\app\opportunities.component.ts" />
